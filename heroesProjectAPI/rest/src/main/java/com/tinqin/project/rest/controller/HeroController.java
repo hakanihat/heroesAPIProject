@@ -1,8 +1,8 @@
 package com.tinqin.project.rest.controller;
 
 import com.tinqin.project.generics.Error;
-import com.tinqin.project.model.HeroRequest;
-import com.tinqin.project.model.HeroResponse;
+import com.tinqin.project.model.HeroAppearanceRequest;
+import com.tinqin.project.model.HeroAppearanceResponse;
 import com.tinqin.project.operation.HeroProcess;
 import io.vavr.control.Either;
 import org.springframework.http.HttpStatus;
@@ -18,8 +18,8 @@ public class HeroController {
     }
 
     @PostMapping("/getHeroById")
-    public ResponseEntity<?> getHero(@RequestBody HeroRequest heroRequest){
-        Either<Error, HeroResponse> response = heroProcess.process(heroRequest);
+    public ResponseEntity<?> getHeroAppearance(@RequestBody HeroAppearanceRequest heroAppearanceRequest){
+        Either<Error, HeroAppearanceResponse> response = heroProcess.process(heroAppearanceRequest);
         if(response.isLeft()){
             return ResponseEntity.status(response.getLeft().getCode()).body(response.getLeft().getMessage());
         }
