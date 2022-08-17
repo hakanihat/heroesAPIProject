@@ -2,8 +2,10 @@ package com.tinqin.project.heroClient.service;
 
 import com.tinqin.project.heroClient.exception.HeroClientException;
 import com.tinqin.project.heroClient.model.Hero;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@Service
 public class HeroClientService {
     private final RestTemplate restTemplate;
 

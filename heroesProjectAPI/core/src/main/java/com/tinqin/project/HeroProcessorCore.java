@@ -11,7 +11,9 @@ import com.tinqin.project.model.HeroAppearanceResponse;
 import com.tinqin.project.operation.HeroProcess;
 import io.vavr.control.Either;
 import io.vavr.control.Try;
+import org.springframework.stereotype.Service;
 
+@Service
 public class HeroProcessorCore implements HeroProcess {
     private final HeroClientService heroClientService;
 
