@@ -1,13 +1,13 @@
-package com.example.heroescrudproject;
+package com.tinqin.project.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HeroesCrudProjectApplication {
+public class RestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HeroesCrudProjectApplication.class, args);
+		SpringApplication.run(RestApplication.class, args);
 	}
 
 }

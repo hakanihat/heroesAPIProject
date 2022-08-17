@@ -1,10 +1,10 @@
-package com.example.heroescrudproject;
+package com.tinqin.project.rest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HeroesCrudProjectApplicationTests {
+class RestApplicationTests {
 
 	@Test
 	void contextLoads() {
