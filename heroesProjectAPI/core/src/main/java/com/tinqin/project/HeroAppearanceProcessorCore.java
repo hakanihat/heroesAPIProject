@@ -8,16 +8,16 @@ import com.tinqin.project.heroClient.model.Hero;
 import com.tinqin.project.heroClient.service.HeroClientService;
 import com.tinqin.project.model.HeroAppearanceRequest;
 import com.tinqin.project.model.HeroAppearanceResponse;
-import com.tinqin.project.operation.HeroProcess;
+import com.tinqin.project.operation.HeroAppearanceProcess;
 import io.vavr.control.Either;
 import io.vavr.control.Try;
 import org.springframework.stereotype.Service;
 
 @Service
-public class HeroProcessorCore implements HeroProcess {
+public class HeroAppearanceProcessorCore implements HeroAppearanceProcess {
     private final HeroClientService heroClientService;
 
-    public HeroProcessorCore(HeroClientService heroClientService) {
+    public HeroAppearanceProcessorCore(HeroClientService heroClientService) {
         this.heroClientService = heroClientService;
     }
 
