@@ -1,4 +1,4 @@
-package com.tinqin.project.model;
+package com.tinqin.project.model.appearance;
 
 import com.tinqin.project.generics.OperationInput;
 import lombok.*;
