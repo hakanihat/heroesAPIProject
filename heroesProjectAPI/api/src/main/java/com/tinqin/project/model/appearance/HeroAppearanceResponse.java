@@ -1,15 +1,13 @@
 package com.tinqin.project.model.appearance;
 
 import com.tinqin.project.generics.OperationResult;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Builder
 @Getter
 @Setter(AccessLevel.PRIVATE)
-
+@ToString
+@EqualsAndHashCode
 public class HeroAppearanceResponse implements OperationResult {
     private String race;
     private String eyeColor;

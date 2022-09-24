@@ -7,6 +7,7 @@ import lombok.*;
 @Setter(AccessLevel.PRIVATE)
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Hero {
     public int id;
     public String name;
